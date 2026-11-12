@@ -1,0 +1,9 @@
+PREGATIRE DECAP CMS - alexandradutu.ro
+
+1. Arhiva contine toate fisierele originale ale site-ului si fisierele noi: admin/, posts/, scripts/, package.json, netlify.toml.
+2. Incarcati CONTINUTUL arhivei in radacina repository-ului GitHub alexandradutu86/alexandradutu-site. Nu incarcati ZIP-ul ca fisier.
+3. La fiecare publicare Netlify executa npm run build, care creeaza paginile articolelor noi din posts/*.md si adauga cardurile lor in blog.html. Articolele HTML vechi raman intacte.
+4. IMPORTANT: editorul /admin/ nu este inca gata de autentificare. Backend-ul GitHub din admin/config.yml necesita configurarea unui furnizor OAuth (de exemplu DecapBridge) si a campurilor sale de autentificare. Nu folositi Netlify Identity ca presupunere automata.
+5. Netlify afiseaza in prezent publicari suspendate din cauza creditelor. Testarea pe site-ul public este posibila numai dupa reluarea deploy-urilor.
+6. Inainte de orice schimbare, pastrati copia ZIP si verificati daca index.html din arhiva este versiunea cea mai recenta a site-ului public; altfel descarcati varianta actuala.
+7. Dupa configurarea autentificarii, editorul va fi la https://alexandradutu.ro/admin/ .
