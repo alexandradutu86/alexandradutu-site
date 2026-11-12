@@ -1,0 +1,5 @@
+PUBLICARE NETLIFY
+1. Dezarhiveaza ZIP-ul.
+2. In Netlify > Deploys, incarca FOLDERUL site_reparat_alexandra, nu blog.html sau index.html separat.
+3. Verifica Deploy file browser: index.html, blog.html, articole.js, sitemap.xml si cele trei pagini de articol.
+4. Deschide https://alexandradutu.ro/ si https://alexandradutu.ro/blog.html
