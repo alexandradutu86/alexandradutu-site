@@ -1,0 +1,29 @@
+# Autentificarea GitHub necesita un furnizor OAuth configurat separat.
+# Configuratia de mai jos este pregatita, dar autentificarea nu va functiona
+# pana la configurarea furnizorului OAuth (ex. DecapBridge).
+backend:
+  name: github
+  repo: alexandradutu86/alexandradutu-site
+  branch: main
+
+locale: ro
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "articole"
+    label: "Articole blog"
+    label_singular: "Articol"
+    folder: "posts"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Titlu", name: "title", widget: "string"}
+      - {label: "Data publicării", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ"}
+      - {label: "Categorie", name: "category", widget: "string", required: false}
+      - {label: "Descriere scurtă", name: "description", widget: "text"}
+      - {label: "Fotografie", name: "image", widget: "image", required: false}
+      - {label: "Conținut", name: "body", widget: "markdown"}
