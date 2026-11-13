@@ -1,11 +1,12 @@
-# Autentificarea GitHub necesita un furnizor OAuth configurat separat.
-# Configuratia de mai jos este pregatita, dar autentificarea nu va functiona
-# pana la configurarea furnizorului OAuth (ex. DecapBridge).
 backend:
-  name: github
+  name: git-gateway
   repo: alexandradutu86/alexandradutu-site
   branch: main
-
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/2f745fa6-1157-429f-a086-9357f494baca/pkce
+  auth_token_endpoint: /sites/2f745fa6-1157-429f-a086-9357f494baca/token
+  gateway_url: https://gateway.decapbridge.com
 locale: ro
 media_folder: "images/blog"
 public_folder: "/images/blog"
